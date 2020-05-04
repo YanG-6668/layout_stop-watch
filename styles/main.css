@@ -1,0 +1,62 @@
+@-webkit-keyframes watch {
+  from {
+    transform: translateX(-50%) rotate(0); }
+  to {
+    transform: translateX(-50%) rotate(360deg); } }
+
+@keyframes watch {
+  from {
+    transform: translateX(-50%) rotate(0); }
+  to {
+    transform: translateX(-50%) rotate(360deg); } }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  height: 100vh; }
+
+.watch {
+  position: relative;
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  border: 10px solid deeppink; }
+  .watch__point {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 40px;
+    width: 40px;
+    background-color: deeppink;
+    border-radius: 50%; }
+  .watch__seconds {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    width: 15px;
+    background-color: #fff;
+    transform-origin: bottom;
+    border-radius: 50%;
+    height: 390px;
+    -webkit-animation: watch 60s linear infinite;
+            animation: watch 60s linear infinite; }
+  .watch__minutes {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    width: 15px;
+    background-color: #fff;
+    transform-origin: bottom;
+    border-radius: 50%;
+    height: 250px;
+    -webkit-animation: watch 3600s linear;
+            animation: watch 3600s linear; }
+
+/*# sourceMappingURL=main.css.map */
